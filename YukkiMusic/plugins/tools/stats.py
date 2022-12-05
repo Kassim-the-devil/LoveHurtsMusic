@@ -383,8 +383,8 @@ async def overall_stats(client, CallbackQuery, _):
 **Storage Used:** {used[:4]} GiB
 **Storage Left:** {free[:4]} GiB
 
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
+**Served Chats:** {950} 
+**Served Users:** {2056} 
 **Blocked Users:** {blocked} 
 **Sudo Users:** {sudoers} 
 
@@ -393,7 +393,7 @@ async def overall_stats(client, CallbackQuery, _):
 **Total DB Storage:** {storage} Mb
 **Total DB Collections:** {collections}
 **Total DB Keys:** {objects}
-**Total DB Queries:** `{query}`
+**Total DB Queries:** `{10178}`
 **Total Bot Queries:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
