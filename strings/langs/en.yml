@@ -75,7 +75,7 @@ admin_34 : "Failed to seek the current stream."
 
 # Start
 start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
-start_2 : "Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups."
+start_2 : "𝐇ᴇʟʟᴏ 𝐌ʏ 𝐍ᴀᴍᴇ 𝐋ᴏᴠᴇ ʜᴜʀᴛs 𝐌ᴜsɪᴄ🎙.\n\n𝐈ᴀᴍ 𝐀 𝐓ᴇʟᴇɢʀᴀᴍ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐁ᴏᴛ 𝐖ɪᴛʜ 𝐒ᴏᴍᴇ 𝐔sᴇғᴜʟ 𝐅ᴇᴀᴛᴜʀᴇs. 𝐒ᴜᴘᴘᴏʀᴛɪɴɢ 𝐏ʟᴀᴛғᴏʀᴍs 𝐋ɪᴋᴇ 𝐘ᴏᴜᴛᴜʙᴇ , 𝐒ᴘᴏᴛɪғʏ , 𝐑ᴇssᴏ, 𝐀ᴘᴘʟᴇ 𝐌ᴜsɪᴄ ,𝐒ᴏᴜɴᴅᴄʟᴏᴜᴅ 𝐄Tᴄ, \n\n𝐅ᴇᴇʟ 𝐅ʀᴇᴇ 𝐓𝐨 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴘs🖤"
 start_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
 start_4 : "{0}'s Owner[{1}] has just joined your chat."
 start_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
