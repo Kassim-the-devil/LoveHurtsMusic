@@ -97,7 +97,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons.append(
         [
             InlineKeyboardButton(
-                text=_["S_B_5"],
+                text=_["𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ]
@@ -124,7 +124,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_7"], user_id=OWNER
+                        text=_["𝐎ᴡɴᴇʀ"], user_id=OWNER
                     ),
                 ]
             )
