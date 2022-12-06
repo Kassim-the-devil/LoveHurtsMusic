@@ -19,7 +19,7 @@ def start_pannel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"],
+                text=_["𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ"],
                 url=f"https://t.me/{app.username}?start=help",
             ),
             InlineKeyboardButton(
