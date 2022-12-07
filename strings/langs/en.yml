@@ -237,48 +237,48 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷𝐓ɪᴛʟᴇ :- ** [{0}](
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Close"
-CLOSEMENU_BUTTON  : "🗑 Close Menu"
-BACK_BUTTON : "⬅ Back"
-UNBAN_BUTTON : "🗑 Unban Assistant"
+CLOSE_BUTTON  : "🗑 𝐂ʟᴏsᴇ"
+CLOSEMENU_BUTTON  : "🗑 𝐂ʟᴏsᴇ 𝐌ᴇɴᴜ"
+BACK_BUTTON : "⬅ 𝐁ᴀᴄᴋ"
+UNBAN_BUTTON : "🗑 𝐔ɴʙᴀɴ 𝐀ssɪsᴛᴀɴᴛ"
 
 #Lyrics
-L_B_1 : "🚀 Checkout Lyrics Now"
+L_B_1 : "🚀 𝐂ʜᴇᴄᴋᴏᴜᴛ 𝐋ʏʀɪᴄs"
 
 # Start
-S_B_1 : "🗒 Commands"
-S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
-S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
+S_B_1 : "🗒 𝐂ᴏᴍᴍᴀɴᴅs"
+S_B_2 : "🔧 𝐒ᴇᴛᴛɪɴɢs"
+S_B_3 : "📨 𝐒ᴜᴘᴘᴏʀᴛ"
+S_B_4 : "📨 𝐂ʜᴀɴɴᴇʟ"
+S_B_5 : "✚ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ"
 S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Bot Owner"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_7 : "👤 𝐁ᴏᴛ 𝐎ᴡɴᴇʀ"
+S_B_8 : "🔎 𝐇ᴏᴡ 𝐓ᴏ 𝐔sᴇ? 𝐂ᴏᴍᴍᴀɴᴅs 𝐌ᴇɴᴜ."
 
 #Help 
-H_B_1 : "Admin Commands"
-H_B_2 : "Play Commands"
-H_B_3 : "Bot Commands"
-H_B_4 : "Extra Commands"
-H_B_5 : "Close Menu"
-H_B_6 : "SudoUser Commands"
+H_B_1 : "𝐀ᴅᴍɪɴ 𝐂ᴏᴍᴍᴀɴᴅs"
+H_B_2 : "𝐏ʟᴀʏ 𝐂ᴏᴍᴍᴀɴᴅs"
+H_B_3 : "𝐁ᴏᴛ 𝐂ᴏᴍᴍᴀɴᴅs"
+H_B_4 : "𝐄xᴛʀᴀ 𝐂ᴏᴍᴍᴀɴᴅs"
+H_B_5 : "𝐂ʟᴏsᴇ 𝐂ᴏᴍᴍᴀɴᴅs"
+H_B_6 : "𝐒ᴜᴅᴏᴜsᴇʀ 𝐂ᴏᴍᴍᴀɴᴅs"
 
 #PlayMode
-PM_B_1 : "DirectPlay"
-PM_B_2 : "InlineMarkup"
-PM_B_3 : "ChannelPlay"
+PM_B_1 : "𝐃ɪʀᴇᴄᴛ 𝐏ʟᴀʏ"
+PM_B_2 : "𝐈ɴʟɪɴᴇᴍᴀʀᴋᴀᴘ"
+PM_B_3 : "𝐂ʜᴀɴɴᴇʟᴘʟᴀʏ"
 
 #Play
-P_B_1 : "🎵 Play Audio"
-P_B_2 : "🎥 Play Video"
-P_B_3 : "🏮 Start Live Stream"
-P_B_4 : "🎵 Play Playlist"
+P_B_1 : "🎵 𝐏ʟᴀʏ 𝐀ᴜᴅɪᴏ"
+P_B_2 : "🎥 𝐏ʟᴀʏ 𝐕ɪᴅᴇᴏ"
+P_B_3 : "🏮 𝐒ᴛᴀʀᴛ 𝐋ɪᴠᴇ 𝐒ᴛʀᴇᴀᴍ"
+P_B_4 : "🎵 𝐏ʟᴀʏ 𝐏ʟᴀʏʟɪsᴛ"
 
 #Playlist
-PL_B_1 : "🚀 Play Playlist"
-PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ CPanel"
-PL_B_4 : "📡 Play Mode"
+PL_B_1 : "🚀 𝐏ʟᴀʏ 𝐏ʟᴀʏʟɪsᴛ"
+PL_B_2 : "✚ 𝐏ʟᴀʏʟɪsᴛs"
+PL_B_3 : "✚ 𝐂ᴘᴀɴᴇʟ"
+PL_B_4 : "📡 𝐏ʟᴀʏ 𝐌ᴏᴅᴇ"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
 PL_B_7 : "❗️ Yes, I'm sure. Delete it"
