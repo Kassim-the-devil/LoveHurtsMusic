@@ -6,6 +6,7 @@ from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 
 
+
 def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
@@ -16,7 +17,15 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text=_["S_B_2"],
+                callback_data="settings_back_helper",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_7"], user_id=OWNER
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
             ),
         ],
      ]
@@ -29,25 +38,23 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text=_["S_B_1"],
                 url=f"https://t.me/{app.username}?start=help",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_2"], callback_data="settings_back_helper"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_4"], url=f"{SUPPORT_GROUP}"
             ),
-            InlineKeyboardButton(
-                text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
-            )
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_7"], user_id=OWNER
-            )
+                text=_["S_B_2"],, callback_data="settings_back_helper"
+            ),
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_1"], text=_["S_B_7"], user_id=OWNER
+            InlineKeyboardButton(
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                )
         ],
      ]
     return buttons
