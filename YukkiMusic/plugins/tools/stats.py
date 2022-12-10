@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import platform
 from sys import version as pyver
@@ -21,17 +12,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from YukkiMusic import YouTube, app
-from YukkiMusic.core.userbot import assistants
-from YukkiMusic.misc import SUDOERS, pymongodb
-from YukkiMusic.plugins import ALL_MODULES
-from YukkiMusic.utils.database import (get_global_tops,
+from AnonX import YouTube, app
+from AnonX.core.userbot import assistants
+from AnonX.misc import SUDOERS, pymongodb
+from AnonX.plugins import ALL_MODULES
+from AnonX.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.stats import (back_stats_buttons,
+from AnonX.utils.decorators.language import language, languageCB
+from AnonX.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
@@ -115,7 +106,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"Top Most Played Track on {MUSIC_BOT_NAME}\n\n**Title:** {title}\n\nPlayed** {co} **times"
+    final = f"ᴛᴏᴩ ᴍᴏsᴛ ᴩʟᴀʏᴇᴅ ᴛʀᴀᴄᴋ ᴏɴ {MUSIC_BOT_NAME}\n\n**ᴛɪᴛʟᴇ:** {title}\n\nᴩʟᴀʏᴇᴅ** {co} **ᴛɪᴍᴇs."
     upl = get_stats_markup(
         _, True if message.from_user.id in SUDOERS else False
     )
@@ -189,9 +180,9 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                    msg += f"✨ [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/SOFIASUPPORT) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
-                    msg += f"🔗 [{title}](https://www.youtube.com/watch?v={items}) ** played {count} times**\n\n"
+                    msg += f"📌 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
             temp = (
                 _["gstats_4"].format(
@@ -233,7 +224,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
             except:
                 continue
             limit += 1
-            msg += f"🔗`{extract}` played {count} times on bot.\n\n"
+            msg += f"💖 `{extract}` ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs ᴏɴ ʙᴏᴛ.\n\n"
         temp = (
             _["gstats_5"].format(limit, MUSIC_BOT_NAME)
             if what == "Chats"
@@ -277,27 +268,27 @@ async def overall_stats(client, CallbackQuery, _):
     song = config.SONG_DOWNLOAD_DURATION
     play_duration = config.DURATION_LIMIT_MIN
     if config.AUTO_LEAVING_ASSISTANT == str(True):
-        ass = "Yes"
+        ass = "ʏᴇs"
     else:
-        ass = "No"
+        ass = "ɴᴏ"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""**Bot's Stats and Information:**
+    text = f"""**ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
-**Imported Modules:** {mod}
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
+**ᴍᴏᴅᴜʟᴇs:** {mod}
+**ᴄʜᴀᴛs:** {served_chats} 
+**ᴜsᴇʀs:** {served_users} 
+**ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
+**sᴜᴅᴏᴇʀs:** {sudoers} 
     
-**Total Queries:** {total_tueries} 
-**Total Assistants:** {assistant}
-**Auto Leaving Assistant:** {ass}
-**Cleanmode duration:** {cm} Mins
+**ǫᴜᴇʀɪᴇs:** {total_queries} 
+**ᴀssɪsᴛᴀɴᴛs:** {assistant}
+**ᴀss ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ:** {ass}
+**ᴄʟᴇᴀɴᴍᴏᴅᴇ:** {cm} ᴍɪɴᴜᴛᴇs
 
-**Play Duration Limit:** {play_duration} Mins
-**Song Download Limit:** {song} Mins
-**Bot's Server Playlist Limit:** {playlist_limit}
-**Playlist Play Limit:** {fetch_playlist}"""
+**ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ:** {play_duration} ᴍɪɴᴜᴛᴇs
+**ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
+**ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
+**ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
@@ -314,7 +305,7 @@ async def overall_stats(client, CallbackQuery, _):
 async def overall_stats(client, CallbackQuery, _):
     if CallbackQuery.from_user.id not in SUDOERS:
         return await CallbackQuery.answer(
-            "Only for Sudo Users", show_alert=True
+            "ᴏɴʟʏ ғᴏʀ sᴜᴅᴏ ᴜsᴇʀs.", show_alert=True
         )
     callback_data = CallbackQuery.data.strip()
     what = callback_data.split(None, 1)[1]
@@ -332,14 +323,14 @@ async def overall_stats(client, CallbackQuery, _):
     t_core = psutil.cpu_count(logical=True)
     ram = (
         str(round(psutil.virtual_memory().total / (1024.0**3)))
-        + " GB"
+        + " ɢʙ"
     )
     try:
         cpu_freq = psutil.cpu_freq().current
         if cpu_freq >= 1000:
-            cpu_freq = f"{round(cpu_freq / 1000, 2)}GHz"
+            cpu_freq = f"{round(cpu_freq / 1000, 2)}ɢʜᴢ"
         else:
-            cpu_freq = f"{round(cpu_freq, 2)}MHz"
+            cpu_freq = f"{round(cpu_freq, 2)}ᴍʜᴢ"
     except:
         cpu_freq = "Unable to Fetch"
     hdd = psutil.disk_usage("/")
@@ -366,35 +357,40 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot's Stats and Information:**
+    text = f""" **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
-**Imported Modules:** {mod}
-**Platform:** {sc}
-**Ram:** {ram}
-**Physical Cores:** {p_core}
-**Total Cores:** {t_core}
-**Cpu Frequency:** {cpu_freq}
+       <b><u>ʜᴀʀᴅᴡᴀʀᴇ</b><u/>
+**ᴍᴏᴅᴜʟᴇs:** {mod}
+**ᴩʟᴀᴛғᴏʀᴍ:** {sc}
+**ʀᴀᴍ:** {ram}
+**ᴩʜʏsɪᴄᴀʟ ᴄᴏʀᴇs:** {p_core}
+**ᴛᴏᴛᴀʟ ᴄᴏʀᴇs:** {t_core}
+**ᴄᴩᴜ ғʀᴇǫᴜᴇɴᴄʏ:** {cpu_freq}
 
-**Python Version :** {pyver.split()[0]}
-**Pyrogram Version :** {pyrover}
-**Py-TgCalls Version :** {pytgver}
+       <b><u>sᴏғᴛᴡᴀʀᴇ</b><u/>
+**ᴩʏᴛʜᴏɴ :** {pyver.split()[0]}
+**ᴩʏʀᴏɢʀᴀᴍ :** {pyrover}
+**ᴩʏ-ᴛɢᴄᴀʟʟs :** {pytgver}
 
-**Storage Avail:** {total[:4]} GiB
-**Storage Used:** {used[:4]} GiB
-**Storage Left:** {free[:4]} GiB
+        <b><u>sᴛᴏʀᴀɢᴇ</b><u/>
+**ᴀᴠᴀɪʟᴀʙʟᴇ:** {total[:4]} GiB
+**ᴜsᴇᴅ:** {used[:4]} GiB
+**ғʀᴇᴇ:** {free[:4]} GiB
+        
+      <b><u>ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs</b><u/>
+**ᴄʜᴀᴛs:** {served_chats} 
+**ᴜsᴇʀs:** {served_users} 
+**ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
+**sᴜᴅᴏᴇʀs:** {sudoers} 
 
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
-
-**Mongo Uptime:** {mongouptime[:4]} Days
-**Total DB Size:** {datasize[:6]} Mb
-**Total DB Storage:** {storage} Mb
-**Total DB Collections:** {collections}
-**Total DB Keys:** {objects}
-**Total DB Queries:** `{10178}`
-**Total Bot Queries:** `{total_queries} `
+      <b><u>ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀsᴇ</b><u/>
+**ᴜᴩᴛɪᴍᴇ:** {mongouptime[:4]} Days
+**sɪᴢᴇ:** {datasize[:6]} Mb
+**sᴛᴏʀᴀɢᴇ:** {storage} Mb
+**ᴄᴏʟʟᴇᴄᴛɪᴏɴs:** {collections}
+**ᴋᴇʏs:** {objects}
+**ǫᴜᴇʀɪᴇs:** `{query}`
+**ʙᴏᴛ ǫᴜᴇʀɪᴇs:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
