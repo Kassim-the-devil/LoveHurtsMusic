@@ -54,7 +54,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_GROUP
+                 text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
             ),
         ],
         [
@@ -104,7 +104,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_GROUP
+                 text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
             ),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
@@ -137,7 +137,7 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_GROUP
+                text=_["S_B_8"], callback_data="settings_back_helper"
             ),
         ],
         [
@@ -168,7 +168,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=config.SUPPORT_GROUP
+                text=_["S_B_8"], callback_data="settings_back_helper"
             ),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
@@ -215,7 +215,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"{config.SUPPORT_GROUP}",
+                callback_data="settings_back_helper"
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -240,7 +240,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"{config.SUPPORT_GROUP}",
+                text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
