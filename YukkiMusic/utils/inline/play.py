@@ -1,5 +1,6 @@
+import random
+
 from pyrogram.types import InlineKeyboardButton
-import config
 
 
 ## After Edits with Timer Bar
