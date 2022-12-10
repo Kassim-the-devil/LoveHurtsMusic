@@ -13,7 +13,7 @@ import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
 from YukkiMusic import YouTube, app
-from YukkiMusic.userbot import assistants
+from YukkiMusic.core.userbot import assistants
 from YukkiMusic.misc import SUDOERS, pymongodb
 from YukkiMusic.plugins import ALL_MODULES
 from YukkiMusic.utils.database import (get_global_tops,
