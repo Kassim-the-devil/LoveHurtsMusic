@@ -12,7 +12,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-def queue_markup(
+ef queue_markup(
     _,
     DURATION,
     CPLAY,
